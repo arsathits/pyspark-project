@@ -1,0 +1,5 @@
+data:
+  yellow_2025_07: "../data/yellow_tripdata_2025-07.parquet"
+
+output:
+  cleaned: "../data/cleaned/"
