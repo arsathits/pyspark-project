@@ -1,6 +1,7 @@
 # Ignore local data & logs
 data/
 logs/
+artifacts/
 *.log
 
 # Ignore system files
