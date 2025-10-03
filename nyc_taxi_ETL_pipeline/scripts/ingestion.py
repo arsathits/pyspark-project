@@ -11,7 +11,7 @@ from utils.spark_session import get_spark
 spark = get_spark("NYC_Taxi_Ingestion")
 
 # Path to the data
-path = "data/yellow_tripdata_2025-07.parquet"
+path = r"D:\pyspark-project\nyc_taxi_ETL_pipeline\data\yellow_tripdata_2025-07.parquet"
 
 # Read the parquet file
 df_raw = spark.read.parquet(path)
