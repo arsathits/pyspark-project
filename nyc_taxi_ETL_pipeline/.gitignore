@@ -1,13 +1,41 @@
-# Ignore local data & logs
-data/
-logs/
-artifacts/
-*.log
-
-# Ignore system files
-.DS_Store
-*.pyc
+# Python
 __pycache__/
+*.py[cod]
+*.so
+*.egg-info/
 
-# Ignore environment configs
+# Virtual envs
+venv/
+env/
 .env
+
+# local envs & IDEs
+.venv/
+.env.*
+.idea/
+.pip-wheel-metadata/
+
+# VS Code
+.vscode/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data and artifacts (do not store large data or Spark logs in git)
+data/
+artifacts/
+logs/
+spark-*/
+
+# Parquet / binary outputs / crc
+*.parquet
+*.crc
+part-*.snappy.parquet
+
+# tests / logs
+.pytest_cache/
+*.log
